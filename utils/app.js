@@ -13,7 +13,7 @@ app.use(express.json());
 app.use("/api/user", userRoute);
 
 app.get("/", (req, res) =>
-  res.status(200).send("WELCOME TO THE USER LINK GENERATOR!")
+  res.status(200).send("WELCOME TO THE SIMPLE JWT FORM!")
 );
 
 app.all("*", (req, res) => res.status(200).send("NO ROUTE FOUND."));
